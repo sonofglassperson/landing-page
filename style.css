@@ -68,7 +68,7 @@ body {
 
 .container img {
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 /* children */
@@ -80,6 +80,25 @@ body {
 
 .sub.text {
     color: white;
+}
+
+.sub.text p {
+    margin-bottom: 0.5rem;
+}
+
+.sub.text button {
+    border: #3882F6 2px solid;
+    padding: 4px 20px;
+    background-color: #3882F6;
+    color: white;
+    font-weight: 600;
+    border-radius: 7px;
+}
+
+.sub.image {
+    border-radius: 15px;
+    /* border: red solid 3px; */
+    overflow: hidden;
 }
 
 .sub.text h1{
@@ -137,10 +156,11 @@ body {
 .quote .container p:last-child {
     margin-left: auto;
     font-weight: bolder;
+    font-size: 1.2rem;
 }
 
 .quote .container p:first-child {
-    font-size: 22px;
+    font-size: 1.5rem;
 }
 
 
@@ -181,4 +201,13 @@ body {
 
 .sign-up .container .text p:first-child {
     font-size: 1.5rem;
+}
+
+/*  */
+
+.footer {
+    padding: 1.5rem;
+    text-align: center;
+    background-color: #1F2937;
+    color: white;
 }
