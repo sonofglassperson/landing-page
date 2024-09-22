@@ -1,4 +1,8 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* RESET */
+
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,7 +13,7 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-
+    font-family: "Work Sans", sans-serif;
 }
 
 .content {
@@ -17,9 +21,10 @@ body {
     flex-direction: column;
 }
 
+/* NAV */
+
 .header {
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
     background-color: #1F2937;
     padding: 16px 0;
@@ -30,7 +35,6 @@ body {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    /* border: blue 3px solid; */
     color: white;
     align-items: center;
 }
@@ -49,12 +53,11 @@ body {
     font-weight: bold;
 }
 
-
-/*  */
+/* SUB-HEADER */
 
 .subheader {
     background-color: #1F2937;
-    padding: 5rem 0;
+    padding: 4.5rem 0;
 }
 
 .subheader .container {
@@ -63,19 +66,13 @@ body {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    /* border: blue 3px solid; */
-}
-
-.container img {
-    width: 100%;
-    height: 100%;
 }
 
 /* children */
 .sub {
     flex: 1 1 350px;
-    /* border: blue 3px solid; */
     min-width: 0;
+    height: 220px;
 }
 
 .sub.text {
@@ -84,6 +81,7 @@ body {
 
 .sub.text p {
     margin-bottom: 0.5rem;
+    padding-right: 3rem;
 }
 
 .sub.text button {
@@ -97,15 +95,21 @@ body {
 
 .sub.image {
     border-radius: 15px;
-    /* border: red solid 3px; */
     overflow: hidden;
+}
+
+.container img {
+    width: 100%;
+    height: 100%;
+    object-fit:fill;
 }
 
 .sub.text h1{
     font-size: 36px;
     padding-right: 10px ;
 }
-/*  */
+
+/* INFORMATION */
 
 .information {
     display: flex;
@@ -124,22 +128,34 @@ body {
 
 .image-container .images {
     display: flex;
+    gap: 8px;
     flex-direction: column;
+
 }
 
 .image-text {
     width: 130px;
     height: 130px;
-    border: blue solid 2.5px;
     border-radius: 10px;
+    display: flex;
+    overflow: hidden;
+    border: #3882F6 solid 1.4px;
+    box-shadow: 10px 10px 5px lightblue;
 }
 
 .images p {
-    width: 130px;
+    width: 100px;
+    align-self: center;
     text-align: center;
 }
 
-/*  */
+.image-text img {
+    width: 100%;
+    height: 110%;
+    object-fit:cover;
+}
+
+/* QUOTE */
 
 .quote {
     background-color: lightgray;
@@ -164,16 +180,16 @@ body {
 }
 
 
-/* Sign up  */
+/* SIGN-UP  */
 
-.sign-up > .container {
+.sign-up .container {
     display: flex;
     width: 50%;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin: 0 auto;
     background-color: #3882F6;
     border-radius: 8px;
-    padding: 20px 0;
+    padding: 1.8rem 0;
 }
 
 .sign-up {
@@ -187,7 +203,8 @@ body {
 
 .sign-up .container button {
     border: white 2px solid;
-    padding: 4px 20px;
+    padding: 4px 1rem;
+    text-wrap: nowrap;
     background-color: #3882F6;
     color: white;
     font-weight: 700;
@@ -196,14 +213,20 @@ body {
 
 .sign-up .container .text {
     color: white;
+    padding-right: 8rem;
 }
 
 
 .sign-up .container .text p:first-child {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 800;
 }
 
-/*  */
+.sign-up .container .text p:nth-child(2) {
+    font-size: 0.8rem;
+}
+
+/* FOOTER */
 
 .footer {
     padding: 1.5rem;
